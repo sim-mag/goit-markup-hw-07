@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Studio</title>
-    <!-- normalizator -->
+    <!-- normalization -->
     <link rel="stylesheet" href="./css/modern-normalize.min.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <!-- odniesienie do pliku stylów -->
+    <!-- my styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -56,153 +56,166 @@
                 </div>
             </div>
         </section>
-        <section class="articles section">
+
+
+
+
+
+        <section class="article section">
             <div class="container">
-                <ul class="flex-text">
+                <ul class="article__grid">
                     <li>
-                        <div class="bg-for-icon">
+                        <div class="article__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3>LOREM IPSUM</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+                        <h3 class="article__heading">LOREM IPSUM</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
                         Sed
                         non sodales dui. Interdum et malesuada
                     </li>
                     <li>
-                        <div class="bg-for-icon">
+                        <div class="article__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3>LOREM IPSUM</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+                        <h3 class="article__heading">LOREM IPSUM</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
                         Sed
                         non sodales dui. Interdum et malesuada
                     </li>
                     <li>
-                        <div class="bg-for-icon">
+                        <div class="article__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3>LOREM IPSUM</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+                        <h3 class="article__heading">LOREM IPSUM</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
                         Sed
                         non sodales dui. Interdum et malesuada
                     </li>
                     <li>
-                        <div class="bg-for-icon">
+                        <div class="article__icon">
                             <svg width="70" height="70">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3>LOREM IPSUM</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
+                        <h3 class="article__heading">LOREM IPSUM</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem.
                         Sed
                         non sodales dui. Interdum et malesuada
                     </li>
                 </ul>
             </div>
         </section>
+
+
+
+
+
         <section class="section container">
-            <div class="no-margin">
-                <h2 class="section-title">Czym się zajmujemy</h2>
-                <ul class="flex-photos">
+            <div class="our-products">
+                <h2 class="section__heading">Czym się zajmujemy</h2>
+                <ul class="section__grid">
                     <li>
-                        <div class="box">
+                        <div class="our-products__element">
                             <img src="./images/tech1.jpg" alt="Photo of a Computer" width="370" height="294">
-                            <div class="text-on-image overlay">Aplikacje komputerowe</div>
+                            <div class="our-products__label">Aplikacje komputerowe</div>
                         </div>
                     </li>
                     <li>
-                        <div class="box">
+                        <div class="our-products__element">
                             <img src="./images/tech2.jpg" alt="Photo of a Phone" width="370" height="294">
-                            <div class="text-on-image overlay">Aplikacje mobilne</div>
+                            <div class="our-products__label">Aplikacje mobilne</div>
                         </div>
                     </li>
                     <li>
-                        <div class="box">
+                        <div class="our-products__element">
                             <img src="./images/tech3.jpg" alt="Photo of a Tablet" width="370" height="294">
-                            <div class="text-on-image overlay">Rozwiązania graficzne</div>
+                            <div class="our-products__label">Rozwiązania graficzne</div>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
+
+
+
         <section class="our-team section">
             <div class="container">
-                <h2 class="section-title">Nasz zespół</h2>
-                <ul class="flex-photos">
-                    <li>
+                <h2 class="section__heading">Nasz zespół</h2>
+                <ul class="section__grid">
+                    <li class="our-team__member">
                         <img src="./images/person1.jpg" alt="Photo of Product Designer" width="270" height="260">
-                        <h3>John Doe</h3>
-                        <span class="profession">Product Designer</span>
-                        <ul class="flex-icons-contact">
-                            <li tabindex='0'><svg width="20" height="20">
+                        <h3 class="our-team__name">John Doe</h3>
+                        <span class="our-team__profession">Product Designer</span>
+                        <ul class="our-team__contact">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="our-team__member">
                         <img src="./images/person2.jpg" alt="Photo of Frontend Developer" width="270" height="260">
-                        <h3>John Doe</h3>
-                        <span class="profession">Frontend Developer</span>
-                        <ul class="flex-icons-contact">
-                            <li tabindex='0'><svg width="20" height="20">
+                        <h3  class="our-team__name">John Doe</h3>
+                        <span class="our-team__profession">Frontend Developer</span>
+                        <ul class="our-team__contact">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="our-team__member">
                         <img src="./images/person3.jpg" alt="Photo of Marketing" width="270" height="260">
-                        <h3>John Doe</h3>
-                        <span class="profession">Marketing</span>
-                        <ul class="flex-icons-contact">
-                            <li tabindex='0'><svg width="20" height="20">
+                        <h3 class="our-team__name">John Doe</h3>
+                        <span class="our-team__profession">Marketing</span>
+                        <ul class="our-team__contact">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="our-team__member">
                         <img src="./images/person4.jpg" alt="Photo of UI Design" width="270" height="260">
-                        <h3>John Doe</h3>
-                        <span class="profession">UI Design</span>
-                        <ul class="flex-icons-contact">
-                            <li tabindex='0'><svg width="20" height="20">
+                        <h3 class="our-team__name">John Doe</h3>
+                        <span class="our-team__profession">UI Design</span>
+                        <ul class="our-team__contact">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg></li>
-                            <li tabindex='0'><svg width="20" height="20">
+                            <li class="our-team__contact-icon" tabindex='0'><svg width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg></li>
                         </ul>
@@ -212,44 +225,44 @@
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="section-title">Nasi klienci</h2>
-                <ul class="flex-clients">
-                    <li tabindex='0' class="svg-border"><svg width="106" height="60">
+                <h2 class="section__heading">Nasi klienci</h2>
+                <ul class="clients">
+                    <li tabindex='0' class="clients__element clients__logo"><svg width="106" height="60">
                             <use href="./images/icons.svg#icon-logo1"></use>
                         </svg></li>
-                    <li tabindex='0' class="svg-border"><svg width="106" height="60">
+                    <li tabindex='0' class="clients__element clients__logo"><svg width="106" height="60">
                             <use href="./images/icons.svg#icon-logo2"></use>
                         </svg></li>
-                    <li tabindex='0' class="svg-border"><svg width="106" height="60">
+                    <li tabindex='0' class="clients__element clients__logo"><svg width="106" height="60">
                             <use href="./images/icons.svg#icon-logo3"></use>
                         </svg></li>
-                    <li tabindex='0' class="svg-border"><svg width="106" height="60">
+                    <li tabindex='0' class="clients__element clients__logo"><svg width="106" height="60">
                             <use href="./images/icons.svg#icon-logo4"></use>
                         </svg></li>
-                    <li tabindex='0' class="svg-border"><svg width="106" height="60">
+                    <li tabindex='0' class="clients__element clients__logo"><svg width="106" height="60">
                             <use href="./images/icons.svg#icon-logo5"></use>
                         </svg></li>
-                    <li tabindex='0' class="svg-border"><svg width="106" height="60">
+                    <li tabindex='0' class="clients__element clients__logo"><svg width="106" height="60">
                             <use href="./images/icons.svg#icon-logo6"></use>
                         </svg></li>
                 </ul>
             </div>
         </section>
     </main>
-    <footer class="footer-wrapper">
+    <footer class="footer">
         <div class="container">
-            <div class="footer-flex">
+            <div class="footer__grid">
                 <div>
-                    <a class="company-name-footer" href="index.html"><span class="logo">Web</span>Studio</a>
-                    <address>
+                    <a class="footer__company-name" href="index.html"><span class="logo">Web</span>Studio</a>
+                    <address class="footer__info">
                         <span>m. Warszawa, Aleje Jerozolimskie 21</span>
                         <ul>
-                            <li><a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                            <li><a class="footer-contact" href="tel:+48111111111">+48 111 111 111</a></li>
+                            <li class="footer__info-element"><a class="footer__info-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="footer__info-element"><a class="footer__info-contact" href="tel:+48111111111">+48 111 111 111</a></li>
                         </ul>
                     </address>
                 </div>
-                <div class="join-us">
+                <div class="footer__social-media">
                     <h3>Dołącz do nas</h3>
                     <ul class="footer-icons-flex">
                         <li tabindex='0'><svg width="20" height="20">

@@ -151,7 +151,8 @@ svg {
     padding: 106px 252px 0;
 }
 
-/* BUTTONS */
+
+/* ----- BUTTONS ----- */
 .main-button {
     margin-top: 30px;
     margin-bottom: 106px;
@@ -381,20 +382,24 @@ svg {
 }
 
 
-/* ----- SEKCJA TEKSTOWA LOREM ----- */
-.articles {
+/* ----- ARTICLES SECTION ----- */
+.article {
     color: var(--grey);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7142;
 }
-.bg-for-icon {
+.article__grid {
+    display: flex;
+    gap: 30px;
+}
+.article__icon {
     background-color: #f5f4fa;
     width: 270px;
     height: 120px;
     padding: 25px 100px;
 }
-.articles h3 {
+.article__heading {
     color: var(--black);
     font-weight: 700;
     font-size: 14px;
@@ -403,24 +408,20 @@ svg {
     padding-bottom: 10px;
     padding-top: 30px;
 }
-.flex-text {
-    display: flex;
-    gap: 30px;
-}
 
 
-/* ----- CZYM SIĘ ZAJMUJEMY ----- */
-.no-margin {
+/* ----- OUR PRODUCTS ----- */
+.our-products {
     margin-top: -94px;
 }
-.section-title {
+.section__heading {
     color: var(--black);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1666;
     text-align: center;
 }
-.flex-photos {
+.section__grid {
     display: flex;
     padding-top: 50px;
     justify-content: center;
@@ -428,13 +429,16 @@ svg {
     fill: var(--icon-grey);
     position: relative;
 }
-.box {
+.our-products__element {
     position: relative;
     overflow: hidden;
     display: block;
     font-size: 0;
 }
-.overlay {
+.our-products__label {
+    padding-top: 27px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: white;
     background-color: rgba(47, 48, 58, 0.8);
     position: absolute;
@@ -447,26 +451,20 @@ svg {
     line-height: 1.1786;
     text-align: center;
 }
-.text-on-image {
-    padding-top: 27px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
 
-
-/* ----- NASZ ZESPÓŁ ----- */
+/* ----- OUR TEAM ----- */
 .our-team {
     background-color: #f5f4fa;
     padding-top: 94px;
 }
-.our-team li {
+.our-team__member {
     text-align: center;
     background-color: white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.our-team h3 {
+.our-team__name {
     color: var(--black);
     font-weight: 500;
     font-size: 16px;
@@ -474,18 +472,18 @@ svg {
     padding-top: 30px;
     padding-bottom: 10px;
 }
-.profession {
+.our-team__profession {
     color: var(--grey);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.1875;
 }
-.flex-icons-contact {
+.our-team__contact {
     display: flex;
     gap: 10px;
     padding: 16px 32px 30px 32px;
 }
-.flex-icons-contact li {
+.our-team__contact-icon {
     border: none;
     background-color: white;
     border-radius: 50%;
@@ -496,23 +494,23 @@ svg {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.flex-icons-contact li:hover,
-.flex-icons-contact li:focus {
+.our-team__contact-icon:hover,
+.our-team__contact-icon:focus {
     background-color: var(--blue);
     fill: white;
     outline: none;
 }
 
 
-/* ----- NASI KLIENCI ----- */
-.flex-clients {
+/* ----- OUR CLIENTS ----- */
+.clients {
     display: flex;
     padding-top: 50px;
     justify-content: center;
     gap: 30px;
     fill: var(--icon-grey);
 }
-.flex-clients li {
+.clients__element {
     gap: 34px;
     justify-content: space-between;
     align-items: center;
@@ -520,23 +518,23 @@ svg {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.svg-border {
+.clients__logo {
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     padding: 16px 32px;
 }
-.svg-border:hover,
-.svg-border:focus {
+.clients__logo:hover,
+.clients__logo:focus {
     fill: var(--blue);
     border-color: var(--blue);
     outline: none;
 }
 
 
-/* ----- MAIN STRONY PORTFOLIO ----- */
-.flex-portfolio {
+/* ----- PORTFOLIO ----- */
+.portfolio {
     display: flex;
     padding-right: 15px;
     padding-left: 15px;
@@ -546,16 +544,16 @@ svg {
     justify-content: space-between;
     margin: 0 -15px;
 }
-.portfolio-item {
+.portfolio__item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project {
+.portfolio__project {
     position: relative;
     width: 370px;
     height: 274px;
     overflow: hidden;
 }
-.description {
+.portfolio__project-description {
     position: absolute;
     top: 0;
     left: 0;
@@ -567,7 +565,7 @@ svg {
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.description p {
+.portfolio__project-description > p {
     color: white;
     font-size: 18px;
     font-weight: 400;
@@ -576,32 +574,32 @@ svg {
     margin-left: 24px;
     margin-right: 45px;
 }
-.project img {
+.portfolio__project > img {
     vertical-align: middle;
 }
-.project-name {
+.portfolio__project-name {
     padding: 20px 24px 20px 24px;
     border: 1px solid #eeeeee;
     border-top: none;
 }
-.project-name h3 {
+.portfolio__project-name > h3 {
     color: var(--black);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
 }
-.project-name .type {
+.portfolio__project-type {
     color: var(--grey);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.875;
 }
-.portfolio-item:hover .description,
-figure:focus .description {
+.portfolio__item:hover .portfolio__project-description,
+figure:focus .portfolio__project-description {
     transform: translateY(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-item:hover,
+.portfolio__item:hover,
 figure:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -610,17 +608,17 @@ figure:focus {
 }
 
 
-/* ----- STOPKA ----- */
-.footer-wrapper {
+/* ----- FOOTER ----- */
+.footer {
     color: white;
     background-color: var(--background-grey);
     padding: 60px 0;
 }
-.footer-flex {
+.footer__grid {
     display: flex;
     gap: 70px;
 }
-.company-name-footer {
+.footer__company-name {
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -628,11 +626,11 @@ figure:focus {
     line-height: 1.1923;
     text-decoration: none;
 }
-.company-name-footer:focus,
-.company-name:focus {
+.footer__company-name:focus,
+.footer__company-name:focus {
     outline: none;
 }
-address {
+.footer__info {
     padding-top: 20px;
     font-style: normal;
     font-weight: 400;
@@ -640,10 +638,10 @@ address {
     line-height: 1.7142;
     text-decoration: none;
 }
-address li {
+.footer__info-element {
     padding-top: 9px;
 }
-.footer-contact {
+.footer__info-contact {
     color: #ffffff99;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
