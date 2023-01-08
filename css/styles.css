@@ -133,7 +133,7 @@ svg {
 
 
 /* ----- EFEKTYWNE ROZWIĄZANIA... ----- */
-.solutions {
+.banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url(../images/bg.jpg);
     text-align: center;
@@ -141,7 +141,7 @@ svg {
     background-position: center;
     background-repeat: no-repeat;
 }
-.solutions h1 {
+.banner__heading {
     color: white;
     font-weight: 900;
     text-transform: uppercase;
@@ -250,7 +250,7 @@ svg {
 
 
 /* ----- MODAL - FORMULARZ ----- */
-.client-form {
+.form {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
@@ -265,7 +265,7 @@ svg {
     color: var(--black);
     margin: 40px 40px 0 40px;
 }
-.form-element {
+.form__element {
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
@@ -273,7 +273,7 @@ svg {
     position: relative;
     margin-left: 40px;
 }
-.form-element svg {
+.form__icon {
     position: absolute;
     left: 12px;
     top: 28px;
@@ -281,7 +281,7 @@ svg {
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-element input {
+.form__element input {
     width: 448px;
     height: 40px;
     padding-left: 40px;
@@ -290,7 +290,7 @@ svg {
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-element textarea {
+.form__element textarea {
     width: 448px;
     height: 120px;
     padding: 12px 16px;
@@ -299,48 +299,48 @@ svg {
     resize: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-element textarea::placeholder {
+.form__element textarea::placeholder {
     padding: 0;
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
-.form-element label {
+.form__element label {
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.01em;
     color: var(--grey);
 }
-.form-element input:focus {
+.form__element input:focus {
     border: 1px solid var(--blue);
     outline: none;
 }
-.form-element input:focus + svg {
+.form__element input:focus + svg {
     fill: var(--blue);
 }
-.form-element textarea:focus {
+.form__element textarea:focus {
     border: 1px solid var(--blue);
     outline: none;
 }
-.modal-content .checkbox {
+.modal-content .form__checkbox {
     padding-bottom: 30px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey);
 }
-.modal-content .checkbox a {
+.modal-content .form__checkbox a {
     color: var(--blue);
     text-decoration: underline;
 }
-.checkbox {
+.form__checkbox {
     position: relative;
     display: flex;
     align-items: center;
     margin: 0 50px;
 }
-.checkbox input[type='checkbox'] {
+.form__checkbox input[type='checkbox'] {
     margin: 0;
     appearance: none;
     border: 2px solid var(--black);
@@ -350,13 +350,13 @@ svg {
     height: 15px;
     margin-right: 8px;
 }
-.checkbox svg {
+.form__checkbox-svg {
     position: absolute;
     opacity: 0;
     width: 16px;
     height: 15px;
 }
-.checkbox input[type='checkbox']:checked + svg {
+.form__checkbox input[type='checkbox']:checked + svg {
     opacity: 1;
     fill: white;
     border: 2px solid var(--blue);
@@ -384,12 +384,6 @@ svg {
 
 /* ----- ARTICLES SECTION ----- */
 .article {
-    color: var(--grey);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.7142;
-}
-.article__grid {
     display: flex;
     gap: 30px;
 }
@@ -407,6 +401,12 @@ svg {
     list-style: none;
     padding-bottom: 10px;
     padding-top: 30px;
+}
+.article__content {
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7142;
 }
 
 
