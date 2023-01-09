@@ -220,7 +220,7 @@ svg {
 
 
 /* ----- OKNO MODALNE ----- */
-.backdrop {
+.modal {
     position: fixed;
     left: 0;
     top: 0;
@@ -228,7 +228,7 @@ svg {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
-.modal-content {
+.modal__content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -252,7 +252,7 @@ svg {
     border-radius: 50%;
     cursor: pointer;
 }
-.backdrop.is-hidden .modal-content {
+.modal.is-hidden .modal__content {
     transform: translate(-50%, -50%) scale(0.4);
     transition-property: transform;
 }
@@ -271,7 +271,7 @@ svg {
     flex-direction: column;
     padding-bottom: 20px;
 }
-.modal-content h3 {
+.modal__content h3 {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -339,14 +339,14 @@ svg {
     border: 1px solid var(--blue);
     outline: none;
 }
-.modal-content .form__checkbox {
+.modal__content .form__checkbox {
     padding-bottom: 30px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey);
 }
-.modal-content .form__checkbox a {
+.modal__content .form__checkbox a {
     color: var(--blue);
     text-decoration: underline;
 }
@@ -379,7 +379,7 @@ svg {
     border-radius: 2px;
     background-color: var(--blue);
 }
-.modal-content .button--submit {
+.modal__content .button--submit {
     padding: 10px 76px;
     margin: 0 164px 40px 164px;
     color: white;
