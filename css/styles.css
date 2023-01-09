@@ -37,19 +37,19 @@ svg {
 
 
 /* ----- HEADER ----- */
-.header-wrapper {
+.header {
     padding: 24px 0 25px 0;
 }
-.wrapper {
+.header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.wrapper nav {
+.header__wrapper nav {
     display: flex;
     gap: 93px;
 }
-.company-name {
+.header__company-name {
     color: black;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -60,7 +60,7 @@ svg {
 .logo {
     color: var(--blue);
 }
-.menu {
+.header__menu {
     display: flex;
     align-items: center;
     gap: 46px;
