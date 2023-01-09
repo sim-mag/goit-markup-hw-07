@@ -51,8 +51,8 @@
         <section class="banner section">
             <div class="container">
                 <h1 class="banner__heading">Efektywne rozwiązania dla waszego biznesu</h1>
-                <div class="main-button">
-                    <button class="button" type="button" data-modal-open>Zamów usługę</button>
+                <div class="banner__button">
+                    <button type="button" class="button button--banner" data-modal-open>Zamów usługę</button>
                 </div>
             </div>
         </section>
@@ -335,7 +335,7 @@
                         <div class="footer__newsletter-form">
                             <input name="email" placeholder="E-mail">
                             <div class="newsletter-button">
-                                <button class="button-newsletter" type="submit">
+                                <button class="button--newsletter" type="submit">
                                     <span>Zapisz się</span>
                                     <svg width="24" height="24">
                                         <use href="./images/icons.svg#icon-send"></use>
@@ -351,7 +351,7 @@
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-content">
-            <button type="button" class="close-btn" data-modal-close>&#x2715;</button>
+            <button type="button" class="button--close-modal" data-modal-close>&#x2715;</button>
             <h3>Zostaw swoje dane w formularzu poniżej</h3>
             <form class="form">
                 <div class="form__element">
@@ -387,7 +387,7 @@
                 </svg>
                 <span>Oświadczam, iż akceptuję <a>Regulamin</a> i <a>Politykę Prywatności.</a></span>
             </label>
-            <button class="submit-button" type="submit">Wyślij</button>
+            <button class="button--submit" type="submit">Wyślij</button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
