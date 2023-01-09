@@ -45,7 +45,7 @@ svg {
     justify-content: space-between;
     align-items: center;
 }
-.header__wrapper nav {
+.header__grid {
     display: flex;
     gap: 93px;
 }
@@ -79,15 +79,15 @@ svg {
 .tab {
     color: var(--black);
 }
-.header-contact-flex {
+.header__menu-contact-grid {
     display: flex;
     gap: 30px;
     fill: var(--grey);
 }
-.header-contact-flex span {
+.header__menu-contact-grid span {
     padding-left: 10px;
 }
-.menu-contact {
+.header__menu-contact {
     display: flex;
     gap: 50px;
 }
