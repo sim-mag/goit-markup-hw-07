@@ -183,7 +183,7 @@ svg {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button--banner {
-    color: w#fff;
+    color: #fff;
     background-color: var(--blue);
     font-weight: 700;
     line-height: 1.875;
