@@ -55,8 +55,6 @@ svg {
     outline: none;
 }
 
-
-
 /* ----- HEADER ----- */
 .header {
     padding: 24px 0 25px 0;
@@ -147,7 +145,6 @@ svg {
     fill: var(--blue);
 }
 
-
 /* ----- EFEKTYWNE ROZWIĄZANIA... ----- */
 .banner {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
@@ -218,7 +215,6 @@ svg {
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-
 /* ----- OKNO MODALNE ----- */
 .modal {
     position: fixed;
@@ -263,7 +259,6 @@ svg {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.33, 0.47, 0.21, 0.67);
 }
-
 
 /* ----- MODAL - FORMULARZ ----- */
 .form {
@@ -397,7 +392,6 @@ svg {
     cursor: pointer;
 }
 
-
 /* ----- ARTICLES SECTION ----- */
 .article {
     display: flex;
@@ -424,7 +418,6 @@ svg {
     font-weight: 400;
     line-height: 1.7142;
 }
-
 
 /* ----- OUR PRODUCTS ----- */
 .our-products {
@@ -517,7 +510,6 @@ svg {
     outline: none;
 }
 
-
 /* ----- OUR CLIENTS ----- */
 .clients {
     display: flex;
@@ -545,7 +537,6 @@ svg {
     border-color: var(--blue);
     outline: none;
 }
-
 
 /* ----- PORTFOLIO ----- */
 .portfolio {
@@ -621,7 +612,6 @@ figure:focus {
     outline: none;
 }
 
-
 /* ----- FOOTER ----- */
 .footer {
     color: white;
@@ -687,7 +677,6 @@ figure:focus {
 .footer__info-element--underline {
     text-decoration: underline;
 }
-
 
 /* ----- NEWSLETTER ----- */
 .footer__newsletter {
