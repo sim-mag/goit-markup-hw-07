@@ -3,7 +3,7 @@
     flex-direction: column;
     padding-bottom: 20px;
 }
-.modal__content h3 {
+.modal__content-heading {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -29,7 +29,7 @@
     fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__element input {
+.form__element-input {
     width: 448px;
     height: 40px;
     padding-left: 40px;
@@ -38,7 +38,7 @@
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__element textarea {
+.form__element-textarea {
     width: 448px;
     height: 120px;
     padding: 12px 16px;
@@ -47,46 +47,44 @@
     resize: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__element textarea::placeholder {
+.form__element-textarea::placeholder {
     padding: 0;
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
-.form__element label {
+.form__element-label {
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.01em;
     color: var(--grey);
 }
-.form__element input:focus {
+.form__element-input:focus {
     border: 1px solid var(--blue);
     outline: none;
 }
-.form__element input:focus + svg {
+.form__element-input:focus + svg {
     fill: var(--blue);
 }
-.form__element textarea:focus {
+.form__element-textarea:focus {
     border: 1px solid var(--blue);
     outline: none;
 }
-.modal__content .form__checkbox {
+.form__checkbox {
     padding-bottom: 30px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey);
-}
-.modal__content .form__checkbox a {
-    color: var(--blue);
-    text-decoration: underline;
-}
-.form__checkbox {
     position: relative;
     display: flex;
     align-items: center;
     margin: 0 50px;
+}
+.form__checkbox-text {
+    color: var(--blue);
+    text-decoration: underline;
 }
 .form__checkbox input[type='checkbox'] {
     margin: 0;
@@ -111,7 +109,7 @@
     border-radius: 2px;
     background-color: var(--blue);
 }
-.modal__content .button--submit {
+.button--submit {
     padding: 10px 76px;
     margin: 0 164px 40px 164px;
     color: #fff;
