@@ -533,16 +533,14 @@ svg {
     transition-property: border-color, background-color, fill, outline;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__logo {
     width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     padding: 16px 32px;
 }
-.clients__logo:hover,
-.clients__logo:focus {
+.clients__element:hover,
+.clients__element:focus {
     fill: var(--blue);
     border-color: var(--blue);
     outline: none;
