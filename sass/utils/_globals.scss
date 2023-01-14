@@ -24,6 +24,21 @@ h4 {
 .section {
     padding: 94px 0;
 }
+.section__heading {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666;
+    text-align: center;
+}
+.section__grid {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    gap: 30px;
+    fill: var(--icon-grey);
+    position: relative;
+}
 svg {
     vertical-align: middle;
 }

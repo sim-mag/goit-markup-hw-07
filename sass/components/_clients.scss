@@ -3,24 +3,26 @@
     padding-top: 50px;
     justify-content: center;
     gap: 30px;
-    fill: var(--icon-grey);
-}
-.clients__element {
-    gap: 34px;
-    justify-content: space-between;
-    align-items: center;
-    transition-property: border-color, background-color, fill, outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    width: 170px;
-    height: 92px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    padding: 16px 32px;
-}
-.clients__element:hover,
-.clients__element:focus {
-    fill: var(--blue);
-    border-color: var(--blue);
-    outline: none;
+    fill: $iconGrey;
+
+    &__element {
+        gap: 34px;
+        justify-content: space-between;
+        align-items: center;
+        transition-property: border-color, background-color, fill, outline;
+        transition-duration: $defaultTransitionDuration;
+        transition-timing-function: $defaultTransitionTiming;
+        width: 170px;
+        height: 92px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        padding: 16px 32px;
+
+        &:hover,
+        &:focus {
+            fill: $blue;
+            border-color: $blue;
+            outline: none;
+        }
+    }
 }
