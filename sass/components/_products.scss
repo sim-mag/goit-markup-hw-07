@@ -1,0 +1,40 @@
+.our-products {
+    margin-top: -94px;
+}
+.section__heading {
+    color: var(--black);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1666;
+    text-align: center;
+}
+.section__grid {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+    gap: 30px;
+    fill: var(--icon-grey);
+    position: relative;
+}
+.our-products__element {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    font-size: 0;
+}
+.our-products__label {
+    padding-top: 27px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1786;
+    text-align: center;
+}

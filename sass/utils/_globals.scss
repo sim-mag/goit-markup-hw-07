@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+ul,
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.section {
+    padding: 94px 0;
+}
+svg {
+    vertical-align: middle;
+}
+
+.company__logo {
+    color: var(--blue);
+}
+.company__name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.1923;
+    text-decoration: none;
+}
+.company__name--header {
+    color: #000;
+}
+.company__name--footer {
+    color: #fff;
+}
+.company__name:focus {
+    outline: none;
+}

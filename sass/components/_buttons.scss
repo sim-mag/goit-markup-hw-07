@@ -1,0 +1,43 @@
+.button {
+    background-color: #f5f4fa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-property: color, background-color, outline, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button--banner {
+    color: #fff;
+    background-color: var(--blue);
+    font-weight: 700;
+    line-height: 1.875;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 41px 10px 42px;
+}
+.portfolio-nav__buttons {
+    display: flex;
+    justify-content: center;
+    padding: 94px 0 50px 0;
+}
+
+.button--portfolio {
+    margin-right: 8px;
+    padding: 6px 22px 6px 22px;
+}
+.button:hover,
+.button:focus {
+    color: #fff;
+    background-color: var(--blue);
+    outline: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
