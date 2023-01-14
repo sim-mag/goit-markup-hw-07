@@ -42,7 +42,6 @@ h4 {
 svg {
     vertical-align: middle;
 }
-
 .company__logo {
     color: var(--blue);
 }
@@ -61,4 +60,7 @@ svg {
 }
 .company__name:focus {
     outline: none;
+}
+::placeholder {
+    padding: 15px 0;
 }
