@@ -73,4 +73,22 @@
         letter-spacing: 0.06em;
         padding: 10px 24px 10px 0px;
     }
+
+    &--submit {
+        padding: 10px 76px;
+        margin: 0 164px 40px 164px;
+        color: #fff;
+        background: $blue;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+    }
 }

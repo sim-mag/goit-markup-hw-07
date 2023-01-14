@@ -20,6 +20,16 @@
         transition: transform $defaultTransitionDuration $defaultTransitionTiming;
     }
 
+    &__content-heading {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        padding-bottom: 12px;
+        color: var(--black);
+        margin: 40px 40px 0 40px;
+    }
 }
 
 .is-hidden {
