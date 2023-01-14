@@ -325,29 +325,27 @@ svg {
     border: 1px solid var(--blue);
     outline: none;
 }
-.form__element input:focus + svg {
+.form__element-input:focus + svg {
     fill: var(--blue);
 }
 .form__element-textarea:focus {
     border: 1px solid var(--blue);
     outline: none;
 }
-.modal__content .form__checkbox {
+.form__checkbox {
     padding-bottom: 30px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey);
-}
-.modal__content .form__checkbox a {
-    color: var(--blue);
-    text-decoration: underline;
-}
-.form__checkbox {
     position: relative;
     display: flex;
     align-items: center;
     margin: 0 50px;
+}
+.form__checkbox-text {
+    color: var(--blue);
+    text-decoration: underline;
 }
 .form__checkbox input[type='checkbox'] {
     margin: 0;
@@ -372,7 +370,7 @@ svg {
     border-radius: 2px;
     background-color: var(--blue);
 }
-.modal__content .button--submit {
+.button--submit {
     padding: 10px 76px;
     margin: 0 164px 40px 164px;
     color: #fff;
