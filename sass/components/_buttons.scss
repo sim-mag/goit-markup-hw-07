@@ -36,6 +36,11 @@
         cursor: pointer;
         border-radius: 4px;
         padding: 10px 41px 10px 42px;
+
+        &:hover {
+            color: $blue;
+            background-color: #fff;
+        }
     }
 
     &--close-modal {
@@ -62,6 +67,12 @@
 
         &:focus {
             outline: 1px solid #fff;
+        }
+
+        &:hover {
+            fill: $blue;
+            color: $blue;
+            background-color: #fff;
         }
     }
 

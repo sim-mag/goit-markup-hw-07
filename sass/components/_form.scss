@@ -33,10 +33,6 @@
         &:focus {
             border: 1px solid $blue;
             outline: none;
-
-            .form__icon {
-                fill: $blue;
-            }
         }        
     }
 
@@ -91,16 +87,6 @@
         width: 16px;
         height: 15px;
         margin-right: 8px;
-
-        &:checked {
-            .form__checkbox-svg {
-                opacity: 1;
-                fill: #fff;
-                border: 2px solid $blue;
-                border-radius: 2px;
-                background-color: $blue;
-            }
-        }
     }
 
     &__checkbox-text {
@@ -116,14 +102,14 @@
     }
 }
 
-// .form__element-input:focus + .form__icon {
-//     fill: var(--blue);
-// }
+.form__element-input:focus + .form__icon {
+    fill: $blue;
+}
 
-// .form__checkbox-input:checked + .form__checkbox-svg {
-//     opacity: 1;
-//     fill: #fff;
-//     border: 2px solid var(--blue);
-//     border-radius: 2px;
-//     background-color: var(--blue);
-// }
+.form__checkbox-input:checked + .form__checkbox-svg {
+    opacity: 1;
+    fill: #fff;
+    border: 2px solid $blue;
+    border-radius: 2px;
+    background-color: $blue;
+}
