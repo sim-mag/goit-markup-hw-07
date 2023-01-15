@@ -55,12 +55,13 @@
         height: 50px;
         background-color: $blue;
         fill: #fff;
+        color: #fff;
         border: none;
         cursor: pointer;
         border-radius: 4px;
 
         &:focus {
-            outline: none;
+            outline: 1px solid #fff;
         }
     }
 
