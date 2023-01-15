@@ -67,12 +67,6 @@
                 top: 45px;
                 left: 5px;
                 display: none;
-
-                &:hover,
-                &:focus {
-                    transition: background-color $defaultTransitionDuration $defaultTransitionTiming;
-                    display: block;
-                }
             }
         }
     }
@@ -115,4 +109,10 @@
     &--border {
         border-bottom: 1px solid #ececec;
     }
+}
+
+.header__nav-tab--non-active:hover::after,
+.header__nav-tab--non-active:focus::after {
+    transition: background-color 250ms $defaultTransitionDuration $defaultTransitionTiming;
+    display: block;
 }
