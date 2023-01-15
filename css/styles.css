@@ -325,7 +325,7 @@ svg {
     border: 1px solid var(--blue);
     outline: none;
 }
-.form__element-input:focus + svg {
+.form__element-input:focus + .form__icon {
     fill: var(--blue);
 }
 .form__element-textarea:focus {
@@ -347,7 +347,7 @@ svg {
     color: var(--blue);
     text-decoration: underline;
 }
-.form__checkbox input[type='checkbox'] {
+.form__checkbox-input {
     margin: 0;
     appearance: none;
     border: 2px solid var(--black);
@@ -363,7 +363,7 @@ svg {
     width: 16px;
     height: 15px;
 }
-.form__checkbox input[type='checkbox']:checked + svg {
+.form__checkbox-input:checked + .form__checkbox-svg {
     opacity: 1;
     fill: #fff;
     border: 2px solid var(--blue);
