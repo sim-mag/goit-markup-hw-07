@@ -720,7 +720,7 @@ svg {
     cursor: pointer;
     border-radius: 4px;
 }
-.button--newsletter-text {
+.button__newsletter-text {
     color: #fff;
     font-weight: 700;
     line-height: 1.875;
